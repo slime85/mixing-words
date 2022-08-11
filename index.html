@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixing Words</title>
+  <link rel="stylesheet" href="font/css/Noto_Sans_KR.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="warp">
+    <div id="input">
+      <h2 class="bottom-20">등록</h2>
+      <div class="box">
+        ENGLISH: <input type="text" id="en">
+        뜻: <input type="text" id="ko">
+        <input type="button" value="등록" id="add">
+        <div id="en-to-ko"></div>
+      </div>
+    </div>
+    <div id="list">
+      <h2 class="bottom-20">등록된 단어</h2>
+      <input type="button" value="초기화" id="reset">
+      <table border="1" id="list-table">
+        <thead>
+          <tr>
+            <th width="5%">No</th>
+            <th width="20%">ENGLISH</th>
+            <th width="20%">뜻</th>
+            <th width="5%"></th>
+            <th width="5%">No</th>
+            <th width="20%">ENGLISH</th>
+            <th width="20%">뜻</th>
+            <th width="5%"></th>
+          </tr>
+        </thead>
+        <tbody id="list-tbody"></tbody>
+      </table>
+    </div>
+    <div id="output">
+      <h2 class="bottom-20">출력</h2>
+      <div id="buttons">
+        <input type="button" value="섞기" id="mix">
+        <input type="button" value="다운로드" id="download">
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="output-html">
+        <div id="output-title">
+          <h3>&lt;DAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</h3>
+          <h3>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<span id="output-count">&nbsp;0</span>)</h3>
+          <h3>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</h3>
+        </div>
+        <table border="1" id="output-table">
+          <thead>
+            <tr>
+              <th width="25%">ENGLISH</th>
+              <th width="22.5%">뜻</th>
+              <th width="5%"></th>
+              <th width="25%">ENGLISH</th>
+              <th width="22.5%">뜻</th>
+            </tr>
+          </thead>
+          <tbody id="output-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="cho.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+#warp{max-width: 1080px; margin: 0 auto; padding: 150px 0; font-size: 20px;}
+input{font-size: 18px;}
+h2{padding-bottom: 20px;}
+.num{text-align: center;}
+
+#warp>div{padding: 0 50px 100px;}
+#input input[type="text"]{width: 200px; margin-right: 15px; padding: 0 5px; }
+#input input[type="button"]{width: 60px;}
+#input .box{position: relative;}
+#en-to-ko{position: absolute; font-size: 16px; top: 40px; left: 100px; border: 1px solid #333; height: 26px; min-width: 50px; padding: 0 5px;}
+
+#list-table{border-collapse: collapse; width: 100%;}
+#list-table input[type="button"]{font-size: 16px;}
+#list-table td{padding: 0 5px;}
+#reset{margin-bottom: 10px;}
+
+#output-table{border-collapse: collapse; width: 100%; border: none;}
+#output-table th, #output-table td{border: #777  1px solid;}
+#output-table th:nth-of-type(3),
+#output-table td:nth-of-type(3){border: #0000;}
+
+#canvas{max-width: calc(100% - 2px); box-sizing: unset; border: 1px solid #777; margin: 20px 0 50px;}
+
+#output-html{padding: 0 70px;}
+#output-title{display: flex; justify-content: space-between; padding-bottom: 20px;}
+#output-table{text-align: center;}
+#output-table th, #output-table td{padding: 5px 0;}
