@@ -337,3 +337,16 @@ document.addEventListener("keyup", e => {
 document.addEventListener("blur", e => {
   shift = false;
 })
+
+$download.addEventListener('click', function(){
+  let dataURL = canvas.toDataURL('image/png');
+
+  dataURL = dataURL.replace(/^data:image\/[^;]*/, 'data:application/octet-stream');
+  dataURL = dataURL.replace(/^data:application\/octet-stream/, 'data:application/octet-stream;headers=Content-Disposition%3A%20attachment%3B%20filename=Canvas.png');
+
+  let aTag = document.createElement('a');
+  
+  aTag.download = 'from_canvas.png';
+  aTag.href = dataURL;
+  aTag.click();
+});
